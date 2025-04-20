@@ -10,7 +10,7 @@ import os
 
 # Function to handle saving the uploaded file
 def handle_uploaded_file(f):
-    path = os.path.join('/Volumes/External/uploads', f.name)
+    path = os.path.join('/Users/dmr/Desktop/uploads', f.name)
     with open(path, 'wb+') as destination:
         for chunk in f.chunks():
             destination.write(chunk)

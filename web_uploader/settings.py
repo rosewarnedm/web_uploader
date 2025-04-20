@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-%)bq$nyj0(4ma$^#mt8s@a5fu3+u)vgbj&%*bkah&85mb+35jq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['1f01-2a02-8012-43e9-0-25b2-6520-54d5-5354.ngrok-free.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'integral-pumped-bengal.ngrok-free.app']
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/Volumes/External/uploads'
+MEDIA_ROOT = '/Users/dmr/Desktup/uploads'
 
 
 # Application definition
@@ -127,5 +127,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://1f01-2a02-8012-43e9-0-25b2-6520-54d5-5354.ngrok-free.app',
-]
+    'https://integral-pumped-bengal.ngrok-free.app',
+    ]
