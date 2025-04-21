@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'integral-pumped-bengal.ngrok-free.app']
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/Users/dmr/Desktup/uploads'
+MEDIA_ROOT = '/Users/dmr/Desktop/'
 
 
 # Application definition
@@ -54,6 +55,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'web_uploader.urls'
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 TEMPLATES = [
     {
@@ -129,3 +132,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
     'https://integral-pumped-bengal.ngrok-free.app',
     ]
+
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/upload/'
